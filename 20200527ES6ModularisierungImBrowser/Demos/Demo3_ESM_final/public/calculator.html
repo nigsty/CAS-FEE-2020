@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CAS FEE - Calculator DEMO / ESM final</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js" defer></script>
+
+    <link rel="icon" href="./images/icon-document.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/documentStyle.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css" >
+
+    <script src="scripts/ui/calculator-controller.js" type="module"></script>
+
+    <script id="calculator-template" type="text/x-handlebars-template">
+        <header>
+            <h1>Calculator</h1>
+        </header>
+        <div>
+            <input type="number" id="left-input" value="{{left}}"> / <input type="number" id="right-input" value="{{right}}"> = [ <output>{{ result }}</output> ] <button data-click="calculate">Calculate</button>
+        </div>
+    </script>
+</head>
+<body>
+    <section class="card" id="calculator-container">
+    </section>
+</body>
+</html>
